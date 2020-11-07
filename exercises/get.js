@@ -17,6 +17,8 @@ const sourceObject = {
 
 // Your code:
 
+var get = (passePartout) => sourceObject[passePartout];
+
 //* Begin of tests
 const assert = require('assert');
 

@@ -9,8 +9,16 @@
 
 // Your code:
 
+const whisper = (whatDoYouWantToWhisper) => whatDoYouWantToWhisper.toLowerCase();
+
+
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.strictEqual(typeof whisper, 'function');
+assert.strictEqual(whisper.length, 1);
+assert.deepStrictEqual(whisper('whispering'), 'whispering');
+assert.deepStrictEqual(whisper('YELLING'), 'yelling');
+assert.deepStrictEqual(whisper('Whisper'), 'whisper');
+assert.deepStrictEqual(whisper('Please turn the volume down !'), 'please turn the volume down !');
 // End of tests */

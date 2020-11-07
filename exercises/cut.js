@@ -12,8 +12,23 @@
 
 // Your code:
 
+var cutFirst = (plop) => plop.slice(2);
+
+var cutLast = (plop) => plop.slice(0, -2);
+
+var cutFirstLast = (plop) => cutLast(cutFirst(plop));
+
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.strictEqual(typeof cutFirst, 'function', 'Should be a function');
+assert.strictEqual(typeof cutLast, 'function', 'Should be a function');
+assert.strictEqual(typeof cutFirstLast, 'function', 'Should be a function');
+assert.strictEqual(cutFirst.length, 1, 'Should take 1 argument');
+assert.strictEqual(cutLast.length, 1, 'Should take 1 argument');
+assert.strictEqual(cutFirstLast.length, 1, 'Should take 1 argument');
+assert.strictEqual(cutFirst('blabla'), 'abla');
+assert.strictEqual(cutLast('blabla'), 'blab');
+assert.strictEqual(cutFirstLast('blabla'), 'ab');
+
 // End of tests */

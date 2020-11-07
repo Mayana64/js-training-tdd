@@ -9,6 +9,14 @@
 
 // Your code:
 
+function getLast(plop) {
+    if (!Array.isArray(plop) && typeof(plop) != "string") {
+        throw new TypeError("On veut un tableau ou une chaîne de caractères, iconoclaste !");
+    }
+    return plop[plop.length-1];
+}
+var getLast = (plop) => plop[plop.length-1];
+
 //* Begin of tests
 const assert = require('assert');
 

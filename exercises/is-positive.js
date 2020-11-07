@@ -9,6 +9,8 @@
 
 // Your code:
 
+var isPositive = (choosenNumber) => choosenNumber > 0;
+
 //* Begin of tests
 const assert = require('assert');
 

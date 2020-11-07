@@ -10,6 +10,20 @@
 
 // Your code:
 
+
+
+function multiply(a, b) {
+    let positif = (a >= 0 && b >= 0) || (a <= 0 && b <= 0);
+    a = Math.abs(a);
+    b = Math.abs(b);
+    
+    let result = 0;
+    for (let i=0; i<b; i++) {
+        result += a;
+    }
+    return positif ? result : -result;
+}
+
 //* Begin of tests
 const assert = require('assert');
 

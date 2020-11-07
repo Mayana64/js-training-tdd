@@ -9,6 +9,8 @@
 
 // Your code:
 
+var getFirst = (plop) => plop[0];
+
 //* Begin of tests
 const assert = require('assert');
 

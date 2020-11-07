@@ -12,6 +12,9 @@
 
 // Your code:
 
+var sign = (choosenNumber) => choosenNumber == 0 ? 0 : 
+    choosenNumber > 0 ? 1 : -1;
+
 //* Begin of tests
 const assert = require('assert');
 

@@ -9,6 +9,8 @@
 
 // Your code:
 
+var getLength = (plop) => plop.length;
+
 //* Begin of tests
 const assert = require('assert');
 

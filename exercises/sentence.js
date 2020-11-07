@@ -8,6 +8,14 @@
 
 // Your code:
 
+function sentence(myArray) {
+    let result = "";
+    myArray.forEach(element => {
+        result += element + ' ';
+    });
+    return result.slice(0, -1);
+}
+
 //* Begin of tests
 const assert = require('assert');
 

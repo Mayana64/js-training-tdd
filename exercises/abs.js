@@ -10,9 +10,19 @@
  */
 
 // Your code:
+function abs(choosenNumber) {
+    choosenNumber = parseFloat(choosenNumber);
+
+    if (choosenNumber < 0) {
+        choosenNumber = -choosenNumber;
+    } 
+
+    return choosenNumber;
+}
 
 //* Begin of tests
 const assert = require('assert');
+const { exception } = require('console');
 
 assert.strictEqual(typeof abs, 'function');
 assert.strictEqual(abs.toString().includes('Math.abs'), false);

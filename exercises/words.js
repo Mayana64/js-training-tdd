@@ -8,6 +8,22 @@
 
 // Your code:
 
+function words(myString) {
+    let result = [];
+    let startIndex = 0;
+        
+    for (let i = 0; i < myString.length; i++) {
+        if (myString[i] == ' ') {
+            result.push(myString.slice(startIndex, i));
+            startIndex = i + 1;
+        } else if (i == myString.length-1) {
+            result.push(myString.slice(startIndex));
+        } 
+    }
+
+    return result;
+}
+
 //* Begin of tests
 const assert = require('assert');
 

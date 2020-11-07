@@ -9,6 +9,14 @@
 
 // Your code:
 
+function repeat(a, b) {
+    let result = '';
+    for (let i=0; i<b; i++) {
+        result = result + a;
+    }
+    return result;
+}
+
 //* Begin of tests
 const assert = require('assert');
 

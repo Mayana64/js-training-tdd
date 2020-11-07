@@ -8,6 +8,14 @@
 
 // Your code:
 
+function total(myArray) {
+    let result = 0;
+    myArray.forEach(element => {
+        result += element;
+    })
+    return result;
+}
+
 //* Begin of tests
 const assert = require('assert');
 

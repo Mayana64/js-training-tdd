@@ -9,6 +9,8 @@
 
 // Your code:
 
+var capitalize = (plop) => plop.charAt(0).toUpperCase() + plop.slice(1).toLowerCase();
+
 //* Begin of tests
 const assert = require('assert');
 
